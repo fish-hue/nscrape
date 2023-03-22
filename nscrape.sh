@@ -47,8 +47,8 @@ if [ "$db_check" == "Y" ]; then
     nikto_command="$nikto_command -dbcheck"
 fi
 
-# Run the Nikto command on ports 80, 440, and 8080 can be adjusted as needed
-nikto_command="$nikto_command -port 80,440,8080"
+# Run the Nikto command on port 80, it can be adjusted as needed
+nikto_command="$nikto_command -port 80"
 echo "Running the following Nikto command: $nikto_command"
 $nikto_command
 
